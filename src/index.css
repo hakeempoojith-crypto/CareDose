@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --bg-canvas: #F7F5EF;
+  --bg-surface: #FFFFFF;
+  --bg-raised: #F0F3ED;
+  --text-main: #1F2B25;
+  --text-muted: #53645A;
+  --primary: #214F3A;
+  --primary-hover: #173E2D;
+  --primary-text: #FFFFFF;
+  --accent: #875E16;
+  --success-text: #266044;
+  --success-bg: #EAF3ED;
+  --warning-text: #805A13;
+  --warning-bg: #FBF2D9;
+  --error-text: #A3342A;
+  --error-bg: #FBECEA;
+  --control-border: #718278;
+  --divider: #D5DCD5;
+  --focus-ring: #94631A;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-main);
+  font-family: 'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+[lang="te"], .font-telugu {
+  font-family: 'Noto Sans Telugu', 'Source Sans 3', system-ui, sans-serif;
+}
+
+[lang="hi"], .font-devanagari {
+  font-family: 'Noto Sans Devanagari', 'Source Sans 3', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Source Serif 4', Georgia, Cambria, 'Times New Roman', serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom focus styles for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Notebook paper subtle texture & border styling */
+.notebook-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--divider);
+  box-shadow: 0 1px 3px rgba(31, 43, 37, 0.05);
+}
+
+.notebook-table-row:nth-child(even) {
+  background-color: #FAFAF7;
+}
+
+/* Touch friendly & accessibility */
+button, input, select, textarea {
+  font-size: 16px;
+}
